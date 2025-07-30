@@ -1,0 +1,57 @@
+## Dashboard con métricas
+Agrega un dashboard para usuarios (marcas y creadores) con:
+
+- Sección de métricas clave: total de vistas, likes, CTR, ROI
+- Gráficos por campaña (últimos 30 días)
+- Comparación entre campañas activas vs finalizadas
+- Panel responsive en React con Tailwind
+- Datos traídos desde backend con MongoDB
+
+## Wallet y Stripe
+Integra una wallet de usuario con las siguientes funciones:
+
+- Visualización de saldo actual
+- Historial de movimientos (entradas por campañas, retiros)
+- Botón “Retirar fondos” conectado a Stripe API
+- Configuración de payout mínimo
+- Backend en Node.js con endpoints protegidos
+- Frontend en React con diseño simple y claro
+
+## Feed de contenido tipo red social
+Agrega un feed donde los creadores pueden mostrar sus publicaciones más recientes:
+
+- Cada post incluye imagen/video, caption, red social (TikTok o Instagram) y fecha
+- Likes y comentarios visibles (no editables)
+- Posibilidad de filtrar por red social o engagement
+- Diseño tipo grid responsive con Tailwind
+- Backend con endpoints para cargar y obtener publicaciones
+
+## Ranking Semanal de Creadores
+Agrega un sistema de ranking semanal de creadores basado en engagement:
+
+- Ranking ordenado por engagement total (likes + shares + comments)
+- Filtro por red social (TikTok o Instagram)
+- Reset automático cada domingo
+- Visualización de top 10 con avatar, nombre y métricas
+- Backend con cronjob semanal y endpoints REST
+- Frontend en React con diseño de leaderboard (Tailwind)
+
+## Chat Interno Marca - Creador
+Implementa un sistema de chat interno entre marcas e influencers:
+
+- Funcionalidad tipo inbox con historial de conversaciones
+- Envío de mensajes en tiempo real (socket.io o alternativa)
+- Relación entre campañas y chats activos
+- Mensajes almacenados en MongoDB
+- Frontend en React: panel de chat + lista de conversaciones
+- Backend en Node.js con websockets y endpoints de historial
+
+## Automatización de Recompensas
+Automatiza las recompensas para creadores según el rendimiento de sus publicaciones:
+
+- Reglas: $X por 1000 views, $Y por 100 likes, etc.
+- Backend que calcula recompensas cada 24hs (cronjob)
+- Actualización automática del saldo en la wallet
+- Alerta en frontend cuando se acredite una recompensa
+- Panel de configuración para marcas con condiciones por campaña
+
